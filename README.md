@@ -60,6 +60,9 @@ CREATE TABLE zepto (
   quantity INTEGER
 );
 
-quantity: Number of units per package (mixed with grams for loose produce)
+2. Data Import
+Loaded CSV using pgAdmin's import feature.
 
-🔧 Project Workflow
+If you're not able to use the import feature, write this code instead:
+
+
