@@ -112,12 +112,57 @@ Measured total inventory weight per product category
 
 ### 🛠️ How to Use This Project
 
+# 1. Clone the repository
 git clone https://github.com/amlanmohanty/zepto-SQL-data-analysis-project.git
 cd zepto-SQL-data-analysis-project
 
-Clone the repository
-# 1. Clone the repository
-```sql
-git clone https://github.com/amlanmohanty/zepto-SQL-data-analysis-project.git
-cd zepto-SQL-data-analysis-project
-```
+# 2. Open zepto_SQL_data_analysis.sql
+
+This file contains:
+
+Table creation
+
+Data exploration
+
+Data cleaning
+
+SQL Business analysis
+
+# 3. Load the dataset into pgAdmin or any other PostgreSQL client
+
+Create a database and run the SQL file
+
+Import the dataset (convert to UTF-8 if necessary)
+
+## Key Learnings & Skill Takeaways
+
+Mastered advanced SQL techniques including Common Table Expressions (CTEs), Window Functions (RANK(), DENSE_RANK(), SUM() OVER()), and multi-table JOINs.
+Hands-on experience in converting raw transaction logs into actionable business key performance indicators (KPIs).
+Practical understanding of quick-commerce operational challenges, such as dark-store inventory turnover and peak-hour delivery fulfillment.
+
+## Problems that this project solves
+
+This project addresses the operational and strategic challenges faced by fast-growing quick-commerce platforms like Zepto, where business decisions depend on real-time data and micro-efficiencies.
+By analyzing transaction data, customer orders, and fulfillment logs, the project tackles four core business problems:
+
+# 1. Delivery Bottlenecks & Late Deliveries
+
+Problem: Quick-commerce promises ultra-fast deliveries (typically under 10–15 minutes). Unpredictable delays hurt customer retention and brand trust.
+Solution: Identifies specific time windows, routes, and dark stores experiencing delivery delays, enabling teams to optimize rider allocation and routing.
+
+# 2. Inventory Mismanagement & Stockouts
+   
+Problem: Overstocking perishable Fast-Moving Consumer Goods (FMCG) leads to waste, while understocking high-demand items results in missed revenue.
+Solution: Tracks product turnover rates, category demand, and low-stock alerts to balance inventory levels across dark store networks.
+
+# 3. Customer Churn & Low Lifetime Value (LTV)
+
+Problem: High customer acquisition costs require platforms to maximize repeat orders and basket sizes.
+Solution: Segments users by purchase frequency, recency, and average order value (AOV) to identify loyal customers and design targeted retention strategies.
+
+# 4. Peak-Hour Demand & Staffing Inefficiencies
+
+Problem: Sudden spikes in order volume during specific hours (e.g., morning groceries or late-night snacks) cause order backlogs.
+Solution: Analyzes hourly ordering trends to optimize dark-store warehouse staffing and delivery partner scheduling during high-demand periods.
+
+
