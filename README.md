@@ -1,7 +1,7 @@
 # 🛒 Zepto E-commerce SQL Data Analyst Portfolio Project
 This project presents an end-to-end SQL-based data analysis of Zepto, one of India's leading 10-minute quick-commerce delivery platforms. The primary objective is to analyze customer purchasing behavior, order fulfillment efficiency, product categories, pricing trends, and revenue metrics to drive actionable business strategies.
 
-📌 Project Overview
+#📌 Project Overview
 The goal is to simulate how actual data analysts in the e-commerce or retail industries work behind the scenes to use SQL to:
 
 ✅ Set up a messy, real-world e-commerce inventory database
@@ -17,7 +17,7 @@ The dataset was sourced from Kaggle and was originally scraped from Zepto’s of
 
 Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate product names exist because the same product may appear multiple times in different package sizes, weights, discounts, or categories to improve visibility – exactly how real catalog data looks.
 
-🧾 Columns:
+#🧾 Columns:
 
 sku_id: Unique identifier for each product entry (Synthetic Primary Key)
 
@@ -39,7 +39,7 @@ outOfStock: Boolean flag indicating stock availability
 
 quantity: Number of units per package (mixed with grams for loose produce)
 
-🔧 Project Workflow
+#🔧 Project Workflow
 Here’s a step-by-step breakdown of what we do in this project:
 
 1. Database & Table Creation
@@ -60,7 +60,7 @@ CREATE TABLE zepto (
   quantity INTEGER
 );
 ```
-2. Data Import
+#2. Data Import
 Loaded CSV using pgAdmin's import feature.
 
 If you're not able to use the import feature, write this code instead:
@@ -72,7 +72,7 @@ If you're not able to use the import feature, write this code instead:
 ```
 
 Faced encoding issues (UTF-8 error), which were fixed by saving the CSV file using CSV UTF-8 format.
-3. 🔍 Data Exploration
+#3. 🔍 Data Exploration
 Counted the total number of records in the dataset
 
 Viewed a sample of the dataset to understand structure and content
@@ -85,12 +85,12 @@ Compared in-stock vs out-of-stock product counts
 
 Detected products present multiple times, representing different SKUs
 
-4. 🧹 Data Cleaning
+#4. 🧹 Data Cleaning
 Identified and removed rows where MRP or discounted selling price was zero
 
 Converted mrp and discountedSellingPrice from paise to rupees for consistency and readability
 
-5. 📊 Business Insights
+#5. 📊 Business Insights
 
 Found top 10 best-value products based on discount percentage
 
@@ -108,7 +108,8 @@ Grouped products based on weight into Low, Medium, and Bulk categories
 
 Measured total inventory weight per product category
 
-🛠️ How to Use This Project
+#🛠️ How to Use This Project
+
 Clone the repository
 
 git clone https://github.com/amlanmohanty/zepto-SQL-data-analysis-project.git
